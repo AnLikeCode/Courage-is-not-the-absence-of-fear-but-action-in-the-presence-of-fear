@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="../../assets/css/styleforwritingpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="../../assets/images/favicon1.jpg" type="image/svg+xml">
+
+    <!-- THUMBNAIL -->
+    <meta name="blog-thumbnail" content="../assets/images/taisaotoivietblog.jpg">
+    
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    
+    <!-- Thêm Title -->
+    <title>Tại sao tôi tạo ra trang Blog này?</title>
+
+    <script>
+        function generateMetaDescription() {
+            const paragraphs = document.querySelectorAll('.blog-content p');
+            let description = '';
+            for (let i = 0; i < Math.min(2, paragraphs.length); i++) {
+                description += paragraphs[i].textContent.trim() + ' ';
+            }
+            description = description.trim();
+            if (description.length > 160) {
+                description = description.substring(0, 157) + '...';
+            }
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription) {
+                metaDescription.setAttribute('content', description);
+            }
+            const schemaScript = document.querySelector('script[type="application/ld+json"]');
+            if (schemaScript) {
+                try {
+                    const schemaData = JSON.parse(schemaScript.textContent);
+                    schemaData.description = description;
+                    schemaScript.textContent = JSON.stringify(schemaData, null, 2);
+                } catch (e) {
+                    console.error('Lỗi khi cập nhật schema:', e);
+                }
+            }
+        }
+        document.addEventListener('DOMContentLoaded', generateMetaDescription);
+    </script>
+
+
+</head>
+<body>
+    <header class="header">
+        <a href="../" class="header-link header-back">
+             Back
+        </a>
+        <div class="header-logo">
+            <a href="../../">
+                <img src="../../assets/images/logo.png" alt="Tum's Logo" />
+            </a>
+        </div>
+        <a href="../AboutMe/" class="header-link header-more"><i class="fas fa-user"></i> About me</a>
+    </header>
+    <main class="blog-post-main">
+        <div class="container">
+            
+            
+            
+            <article class="blog-post">
+                <div class="blog-header">
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+                        <!-- CÁI TITLE Ở ĐÂY -->
+                    
+
+
+                    <h1><span class="xam">Tại sao tôi tạo ra trang Blog này?</span></h1>
+                    <div class="blog-meta">
+                                                                    <!-- CÁI TIME Ở ĐÂY -->
+                        <time datetime="2025-03-30" class="date">Published on: April 15, 2025</time>
+                        <span class="author">By: An Pnh</span>    
+                    </div>
+                    <hr class="blog-tags-hr">
+                </div>
+                <div class="blog-content">
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+                    <h1>Về An Pnh</h1>                    
+                    <figure class="inline-image myimg">
+                        <!-- CÁI HÌNH Ở ĐÂY -->
+                        <img src="../../assets/images/Thiếtkếchưacótên.jpg" alt="Inline Image">            
+                    </figure>
+                    <p class="helo">
+                        Xin chào, Tôi là AnPnh (Phan Nguyễn Hoài An) - một sinh viên UIT đam mê công nghệ
+                    </p>
+                    <p>
+                        Tính đến thời điểm hiện tại (14.04.2025), tôi đang sinh sống, học tập và làm việc tại thành phố Hồ Chí Minh, Việt Nam. Tôi hiện đang theo học chương trình cử nhân Mạng máy tính và truyền thông dữ liệu tại <a class="xam" href="https://www.uit.edu.vn/" target="_blank">Đại học Công nghệ thông tin, Đại học Quốc gia thành phố Hồ Chí Minh.</a> 
+                    </p>
+                    <p>
+                        Song song với việc học đại học, tôi đang theo đuổi một giấc mơ có phần "khó nhằn" – đó là lĩnh vực Quantum Computing (Tính toán lượng tử). Tôi có cơ hội đồng hành, học hỏi cùng Supervisor của mình và cùng với một anh lớn trong nhóm nghiên cứu <a class="xanh" href="https://quantumai.cloud/" target="_blank">QAC</a>. Tại đây, tôi được tham gia vào việc nghiên cứu các vấn đề xoay quanh lĩnh vực mình yêu thích - tính toán lượng tử, đặc biệt nghiên cứu của tôi tập trung vào các thuật toán lượng tử.
+                    </p>
+                    <p>
+                        Ngoài ra, tôi cũng đang góp phần nhỏ của mình trong việc hỗ trợ phát triển <a class="xanh" href="https://ioacademy.vn/" target="_blank">IO Academy</a> – một cộng đồng toàn cầu dành cho học giả, sinh viên và người đi làm trong lĩnh vực Công nghệ Thông tin, nơi chia sẻ kiến thức, kỹ năng và kết nối những người cùng chí hướng.
+                    </p>
+                    <p>
+                        Về sở thích cá nhân, tôi rất thích tìm hiểu về các công nghệ mới, đặc biệt là trong lĩnh vực Mạng máy tính. Ngay từ những ngày đầu bước chân vào ngành IT, tôi đã luôn tò mò rằng làm sao các thiết bị có thể giao tiếp được với nhau, tại sao chúng ta có thể dễ dàng sử dụng các dịch vụ Cloud, và đằng sau những dịch vụ đó là cả một hệ thống được vận hành như thế nào? Bên cạnh đó, Tính toán lượng tử là một chủ đề có độ thử thách cao và chính điều đó đã thu hút tôi. Tôi bắt đầu hành trình khám phá Quantum Computing từ tháng 6 năm 2024, nhờ vào sự hỗ trợ tận tình của Supervisor và theo dõi các khóa học từ IBM Quantum.
+
+                        Gần đây, tôi bắt đầu hình thành thói quen đọc sách thay vì sử dụng mạng xã hội. Những cuốn sách xoay quanh phát triển bản thân, tư duy và định hướng nghề nghiệp đang dần trở thành nguồn cảm hứng cho tôi trong việc học tập và trưởng thành. Chính việc đọc sách cũng giúp tôi cải thiện khả năng dùng từ, diễn đạt và là động lực để tôi bắt đầu hành trình viết lách – và blog này chính là nơi tôi gửi gắm những suy nghĩ, chia sẻ hành trình học tập, cũng như lan tỏa đam mê với công nghệ đến với mọi người.
+                    </p>
+                    <h1>Về AnPnh's Blog</h1>
+                    
+                    <div class="image-text-layout">
+                        <div class="image-text-image">
+                            <img src="../../assets/images/aboutme_img.png" alt="Layout Image">
+                        </div>
+                        <div class="image-text-content right">
+                            <p>
+                                <em>AnPnh's Blog</em> – một góc nhỏ trực tuyến mà tôi xây dựng với tất cả niềm đam mê và tâm huyết, nơi tôi chia sẻ những góc nhìn độc đáo về cuộc sống, những trải nghiệm cá nhân, hoặc chỉ đơn giản là <span class="dam_xam">một cuốn sổ nhật ký số</span> để lưu giữ hành trình tuổi trẻ của mình. Hơn hết, blog này là nơi tôi tổng hợp kiến thức từ nhiều nguồn, tôi học rất nhiều điều từ trường đại học, kinh nghiệm từ những người đi trước, và cả những bài học tự học, tất cả được chắt lọc và trình bày dễ hiểu nhất có thể với mong muốn <span class="dam_xam">đơn giản hóa những thứ phức tạp</span>. Đây cũng là một không gian mở, nơi chúng ta kết nối qua kiến thức và những câu chuyện của mỗi người.
+                            </p>
+                        </div>
+                    </div>    
+                    <p>
+                        Tại Blog này, tôi tập trung vào các chủ đề mà tôi hứng thú như <span class="dam-xam">Công nghệ thông tin, Quantum Computing, Mạng máy tính</span>, và nhiều lĩnh vực hấp dẫn khác. Dù bạn là người đam mê công nghệ hay chỉ muốn khám phá, tôi hy vọng blog này sẽ mang đến những bài viết hữu ích, và nếu có thể thì có thể góp một phần nhỏ vào hành tình của các bạn.
+                    </p>
+
+                    <figcaption class="figcaption">Bạn có thể ghé thăm trang web chính thức của An <a class="xam dam_xam" href="https://hitum.cloud/" target="_blank">tại đây!</a></figcaption>
+                    <figcaption class="figcaption">Hãy cảm thấy thoải mái khi ở đây!</figcaption>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+                </div>
+                <div class="author-bio">
+                    <div class="author-avatar">
+                        <img src="../../assets/images/Thiếtkếchưacótên.jpg" alt="Author Avatar">
+                    </div>
+                    <div class="author-info">
+                        <h3>An Pnh</h3>
+                        <p class="author-title">Amateur Writer & Quantum Computing Enthusiast</p>
+                        <p class="author-description">Tôi là một người đam mê công nghệ và yêu thích viết lách. Tôi luôn muốn chia sẽ đến người khác những kiến thức mà mình tiếp thu được theo một cách ngắn gọn nhất, dễ hiểu nhất!</p>
+                        <div class="author-social">
+                            <a href="https://www.facebook.com/tumisquantum" class="social-link">Facebook</a>
+                            <a href="https://www.youtube.com/@tumisquantum" class="social-link">Youtube</a>
+                            <a href="https://www.threads.com/@han502072" class="social-link">Threads</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Notion post
+    <div class="notion-container">
+        <div class="notion-iframe-wrapper">
+            <iframe 
+                src="https://hoaio.notion.site/ebd/1c34854868678044808fdd33484ce24d" 
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div> -->
+
+    <footer class="footer">
+        <p>Copyright 2025 © AnPnh/Tum. All rights reserved.</p>
+    </footer>
+
+    <style>
+        .myimg img {
+            /* justify-content: center; */
+            width: auto;
+            height: auto;
+            max-width: 200px;
+            border-radius: 8px;
+        }
+        /* .blog-content{
+            text-align: center;
+        } */
+
+        /* .blog-content p{
+            text-align: center;
+        } */
+        /* .right p{
+            text-align: left;
+        } */
+        .blog-header{
+            text-align: center;
+        }
+        .blog-meta{
+            display: block;
+        }
+        .blog-tags-hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, #fbfbfb58, #9c9b9bab, #fbfbfb58);
+            /* background: linear-gradient(to right, #9c9b9b, #ddd, #ffffff); */
+            border-radius: 5px;            
+        }
+        a.xanh {
+            text-decoration: none;
+        }
+        a.xam {
+            text-decoration: none;
+        }
+        .helo{
+            margin-top: 20px;
+        }
+
+    </style>
+
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('.header');
+        const scrollThreshold = 50; 
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop && currentScroll > scrollThreshold) {
+                header.classList.add('hide');
+            } else {
+                header.classList.remove('hide');
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        }, { passive: true });
+    </script>
+</body>
+</html>

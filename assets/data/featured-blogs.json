@@ -1,0 +1,22 @@
+{
+    "featured": [
+      {
+        "id": "blog1",
+        "title": "Máy tính lượng tử là gì?",
+        "date": "March 30, 2025",
+        "excerpt": "Máy tính lượng tử là một loại máy tính sử dụng các nguyên lý của cơ học lượng tử để xử lý thông tin...",
+        "thumbnail": "../../assets/images/hitum1.png",
+        "url": "./blog/writeblog/blog1.html",
+        "tags": ["QuantumComputing"]
+      },
+      {
+        "id": "blog2",
+        "title": "Blog Post 2",
+        "date": "April 1, 2025",
+        "excerpt": "Description for blog post 2...",
+        "thumbnail": "../../assets/images/nền_labtop.jpg",
+        "url": "./blog/writeblog/blog2.html",
+        "tags": ["Networking"]
+      }
+    ]
+  }

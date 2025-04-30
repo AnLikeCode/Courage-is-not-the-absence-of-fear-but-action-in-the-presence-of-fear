@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anpnh's Blog - Everything about me is here.</title>
+    <link rel="stylesheet" href="../assets/css/styleforlandingpageblog.css">
+    <link rel="shortcut icon" href="../assets/images/favicon1.jpg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+            article:hover {
+                transform: translateY(-5px);
+                transition: transform 0.3s ease;
+            }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <a href="../">
+                <img src="../assets/images/logo.png" alt="Tum's Logo" />
+            </a>
+        </div>
+        <div class="header-search">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm bài viết...">
+                <button type="button" id="searchButton">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <a href="../posts/AboutMe/" class="header-link header-more">
+            <i class="fas fa-user"></i> About me
+        </a>
+    </header>
+
+    <div>
+        
+    </div>
+
+    <main>
+        <div class="container">
+            <!-- ==LEFT COLUMN - BLOG POSTS== -->
+            <section class="left-column">
+                <!-- Blog posts will be dynamically loaded here -->
+            </section>
+
+            <!-- ==RIGHT COLUMN - SIDEBAR== -->
+            <aside class="right-column">
+                <div class="card-right-column about">
+                    <h2>About Me</h2>
+                    <img src="../assets/images/Thiếtkếchưacótên.jpg" alt="Tum's Profile Picture">
+                    <p>Xin chào! Tôi là <span class="dam-xanh">AnPnh</span> hay còn gọi là Tum, nơi này là một sổ tay <span class="dam-xam">nhật ký số</span> để tôi lưu giữ hành trình <em>"lớn lên"</em> cũng như là nơi tôi thực hiện <span class="dam-xam">khao khát chia sẻ</span> của mình!</p>
+                    <div class="about-social-icons">
+                        
+                            <a href="https://www.instagram.com/han502072/" class="social-link ig" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.threads.com/@han502072" class="social-link th" target="_blank">
+                              <i class="fa-brands fa-threads"></i>
+                            </a>
+                            <a href="https://www.facebook.com/tumisquantum" class="social-link fb" target="_blank">
+                              <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@tumisquantum" class="social-link yt" target="_blank">
+                              <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ho%C3%A0i-an-a432782b6/" class="social-link li" target="_blank">
+                              <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                          
+                    </div>
+                </div>
+
+                <div class="card-right-column about myblog-info">
+                    <h2>About My Blog</h2>
+                    <div class="blog-tags" id="blogTags">
+                        <!-- Tags will be dynamically added here -->
+                    </div>
+                    <div class="blog-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-book"></i>
+                            <span id="totalPosts">0 Bài viết</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-tags"></i>
+                            <span id="totalTags">0 Tags</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-calendar"></i>
+                            <span id="currentYear"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card-right-column">
+                    <h2>Read Random Posts</h2>
+                    <ul id="randomPostsList">
+                        <!-- Danh sách bài viết sẽ được thêm vào đây động -->
+                    </ul>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+
+    <!-- <footer class="footer">
+        <p>Copyright 2025 © AnPnh/Tum. All rights reserved.</p>
+    </footer> -->
+
+
+
+<script>
+    //----------THÊM DANH SÁCH TAG VÀO ĐÂY----------
+    const blogTags = [
+        '#QuantumComputing',
+        '#Technology',
+        '#ComputerNetworking',
+    ];
+</script>
+
+<!-- '#Learning' -->
+
+<script src="../assets/js/managepost.js"></script>
+</body>
+</html>
