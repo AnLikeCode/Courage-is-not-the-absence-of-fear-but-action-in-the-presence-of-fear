@@ -7,14 +7,12 @@ const HIGHLIGHT_STYLES = {
     dam_xam: 'dam_xam',
     gachchan: 'gachchan',
 };
-
 function appendToBlogContent(htmlContent) {
     const blogContent = document.querySelector('.blog-content');
     if (blogContent) {
         blogContent.innerHTML += htmlContent;
     }
 }
-
 function setBlogHeader({ title, author, time, tags }) {
     const blogHeader = document.querySelector('.blog-header');
     if (!blogHeader) return;
@@ -36,10 +34,8 @@ function setBlogHeader({ title, author, time, tags }) {
         });
         html += `</div></div><hr class="blog-tags-hr">\n`;
     }
-
     blogHeader.innerHTML = html;
 }
-
 function applyHighlight(content) {
     const spanMatch = content.match(/\[\[(.+?)\]\]/);
     if (spanMatch) {

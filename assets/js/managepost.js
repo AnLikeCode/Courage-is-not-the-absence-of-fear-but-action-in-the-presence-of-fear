@@ -1,5 +1,4 @@
 const cachedPosts = [];
-
 function getRandomElements(array, n) {
     const result = [...array];
     for (let i = result.length - 1; i > 0; i--) {
@@ -8,7 +7,6 @@ function getRandomElements(array, n) {
     }
     return result.slice(0, Math.min(n, result.length));
 }
-
 async function fetchBlogContent(blogFile) {
     if (!blogFile || typeof blogFile !== 'string') {
         throw new Error('Invalid blog file name');

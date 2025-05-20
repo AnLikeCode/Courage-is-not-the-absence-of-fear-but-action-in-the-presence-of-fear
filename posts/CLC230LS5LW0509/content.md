@@ -11,12 +11,11 @@ Ngoài ra
         [[xanh:...]], [[xam:...]], [[dam:...]], [[nghien:...]], [[dam_xanh:...]], [[dam_xam:...]], [[gachchan:...]]
 
                                Bên dưới là phần viết  -->
-thubnail
-
+thumbnail
+../assets/images/thumbcloud1.jpg
 
 title
-☁️ Tổng quan về Cloud Computing - Cùng khám phá sức mạnh của "đám mây công nghệ" này
-
+Tổng quan về Cloud Computing - Cùng khám phá sức mạnh của "đám mây công nghệ" này
 
 author
 AnPnh
