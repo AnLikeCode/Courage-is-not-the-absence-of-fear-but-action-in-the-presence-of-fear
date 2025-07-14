@@ -669,7 +669,10 @@
 }
 
 @media (max-width: 1024px) {
-    .hero .container {
+  .btn-primary{
+    display: none;
+  }  
+  .hero .container {
         flex-direction: column;
         text-align: center;
         gap: 40px;
@@ -702,7 +705,10 @@
 }
 
 @media (max-width: 768px) {
-    .banner-wrapper {
+  .btn-primary{
+    display: none;
+  }   
+  .banner-wrapper {
         max-width: 350px;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -710,7 +716,10 @@
 }
 
 @media (max-width: 480px) {
-    .banner-wrapper {
+  .btn-primary{
+    display: none;
+  } 
+  .banner-wrapper {
         margin-top: 40px;
         margin-bottom: 50px;
     }
@@ -788,6 +797,9 @@
   }
   
   @media (min-width: 1200px) {
+  .btn-primary{
+    display: none;
+  } 
     .hero .container {
       max-width: 1140px;
     }
@@ -803,6 +815,9 @@
   }
   
   @media (max-width: 1024px) {
+    .btn-primary{
+      display: none;
+    } 
     .hero .container {
       flex-direction: column;
       text-align: center;
@@ -836,6 +851,9 @@
   }
   
   @media (max-width: 768px) {
+  .btn-primary{
+    display: none;
+  } 
     .hero {
       padding-block: 80px;
     }
